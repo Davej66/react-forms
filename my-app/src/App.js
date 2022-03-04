@@ -1,14 +1,10 @@
-import css from "./App.module.css";
-import NavBarSimple from "./components/NavBarSimple";
-import Sidebar from "./components/Sidebar";
-import NavBarForm from "./components/NavBarForm";
+import "./App.css";
+import { SearchBar } from "./components/SearchBar";
 
 function App() {
-  return (
-    <div className={css.NavBar}>
-      {<NavBarForm />}
-    </div>
-  );
+  return <div className="App">
+      <SearchBar />
+  </div>;
 }
 
 export default App;
